@@ -3,7 +3,7 @@ scottyc/openvpn
 
 A Openvpn Access Server running in a Ubuntu 14.04 docker container.
 
-[`scottyc/openvpn`](https://registry.hub.docker.com/u/scottyc/openvpnas/)
+[`scottyc/openvpn`](https://registry.hub.docker.com/u/scottyc/openvpn/)
 
 ##Running
 

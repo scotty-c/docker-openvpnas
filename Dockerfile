@@ -12,5 +12,7 @@ RUN echo "openvpn:password1234" | chpasswd
 
 EXPOSE 443/tcp 1194/udp 943/tcp
 
+VOLUME ["/usr/local/openvpn_as"]
+
 CMD ["/usr/local/openvpn_as/scripts/openvpnas", "-n"]
 

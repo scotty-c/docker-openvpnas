@@ -14,5 +14,5 @@ Create a Dockerfile in your project ```FROM``` scottyc/openvpn or
 docker run -d -p 443:443 -p 943:943 -p 1194:1194/udp --privileged=true scottyc/openvpn
 
 ```
-Then login to ```https://dockerhostip:containerport/admin```
+Then login to ```https://dockerhostip:943/admin```
 Username is openvpn password is password1234 (you might want to change that !!!)

@@ -1,12 +1,12 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 
 MAINTAINER Scott Coulton "https://github.com/scotty-c/docker-openvpn"
 
 USER root
 
-RUN apt-get update && apt-get install -y wget iptables && \
-    sudo wget http://swupdate.openvpn.org/as/openvpn-as-2.1.2-Ubuntu14.amd_64.deb && \ 
-    dpkg -i openvpn-as-2.1.2-Ubuntu14.amd_64.deb && \
+RUN apt-get update && apt-get install -y wget iptables net-tools  && \
+    wget http://swupdate.openvpn.org/as/openvpn-as-2.1.2-Ubuntu16.amd_64.deb && \ 
+    dpkg -i openvpn-as-2.1.2-Ubuntu16.amd_64.deb && \
     echo "openvpn:password1234" | chpasswd
 
 

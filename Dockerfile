@@ -7,10 +7,10 @@ USER root
 WORKDIR / 
 
 RUN apt-get update && apt-get install -y wget iptables net-tools  && \
-    wget http://swupdate.openvpn.org/as/openvpn-as-2.1.9-Ubuntu16.amd_64.deb && \ 
-    dpkg -i openvpn-as-2.1.9-Ubuntu16.amd_64.deb && \
+    wget https://swupdate.openvpn.org/as/openvpn-as-2.1.12-Ubuntu16.amd_64.deb && \ 
+    dpkg -i openvpn-as-2.1.12-Ubuntu16.amd_64.deb && \
     echo "openvpn:password1234" | chpasswd && \
-    rm -rf openvpn-as-2.1.9-Ubuntu16.amd_64.deb
+    rm -rf openvpn-as-2.1.12-Ubuntu16.amd_64.deb
 
 COPY build/entrypoint.sh /
 RUN chmod +x /entrypoint.sh
